@@ -75,4 +75,9 @@ public class ChambreController {
         long nbChambres = ChambreService.nbChambreParTypeEtBloc(type, idBloc);
         return new ResponseEntity<>(nbChambres, HttpStatus.OK);
     }
+
+    @PostMapping("/affecter")
+    public String affecterMaintenance() {
+        return ChambreService.affecterMaintenance();
+    }
 }
