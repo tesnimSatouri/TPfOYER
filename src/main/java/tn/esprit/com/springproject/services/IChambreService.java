@@ -15,4 +15,6 @@ public interface IChambreService {
     Chambre updateChambre(Chambre b);
     void deleteChambre(Long id);
     public long nbChambreParTypeEtBloc(TypeChambre type, long idBloc) ;
+
+    String affecterMaintenance();
 }
